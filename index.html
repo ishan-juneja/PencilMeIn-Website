@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Landing Page</title>
+  <!-- Google Fonts (Poppins) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #5273f4, #4d9ef8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 2rem;
+      margin: auto;
+    }
+
+    /* Logo placeholder */
+    .logo-placeholder {
+      width: 80px; 
+      height: 80px; 
+      margin: 0 auto 1rem;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Heading styling */
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* Highlight "Pencil Me In" by making it bigger & bolder (same color) */
+    .highlighted {
+      font-weight: 700;
+      font-size: 2.5rem; /* Slightly larger than the rest */
+      text-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+      margin-top: 5px;
+      margin-bottom: 10px;
+      display: inline-block; 
+      
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    input[type="email"] {
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      width: 240px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem 1.25rem;
+      border: none;
+      background-color: #fff;
+      color: #5273f4;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Logo Placeholder (Replace with your actual logo) -->
+    <div>
+        <img src="pmilogo.png" alt="Logo" style="width: 120px; margin-bottom: 1.5rem;">
+    </div>
+
+    <!-- Updated heading with emphasis on "Pencil Me In" in white but bolder and larger -->
+    <h1>
+      Get Notified When<br>
+      <span class="highlighted">pencil me in</span><br>
+      Is Launching
+    </h1>
+    <p>Join the waitlist for the next all-in-one scheduling platform.</p>
+    
+    <!-- Replace ACTION with your Google Apps Script link once you set it up -->
+    <form action="https://docs.google.com/spreadsheets/d/1GiuNXvxSqAz5i47cn7FFDFZb0ZZN3njt_WqFfUR0204/edit?usp=sharing" method="POST">
+      <input type="email" name="email" placeholder="Email Address..." required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </div>
+
+</body>
+</html>
